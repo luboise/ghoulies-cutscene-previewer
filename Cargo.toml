@@ -1,0 +1,16 @@
+[package]
+name = "ghoulies_cutscene_previewer"
+version = "0.1.0"
+edition = "2024"
+
+[build]
+target = "wasm32-unknown-unknown"
+
+[dependencies]
+# bnl = { git = "https://github.com/luboise/bnl", version = "0.1.0", branch = "feat-refactor-assets" }
+bnl = { path = "../bnl" }
+web-sys = "0.3.103"
+yew = { version = "0.23.0", features = ["csr"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.3", features = ["wasm_js"] }
