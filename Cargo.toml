@@ -7,8 +7,7 @@ edition = "2024"
 target = "wasm32-unknown-unknown"
 
 [dependencies]
-# bnl = { git = "https://github.com/luboise/bnl", version = "0.1.0", branch = "feat-refactor-assets" }
-bnl = { path = "../bnl" }
+bnl = { git = "https://github.com/luboise/bnl", branch = "feat-refactor-assets" }
 web-sys = "0.3.103"
 yew = { version = "0.23.0", features = ["csr"] }
 

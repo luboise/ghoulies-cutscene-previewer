@@ -291,6 +291,7 @@ dependencies = [
 [[package]]
 name = "bnl"
 version = "0.1.0"
+source = "git+https://github.com/luboise/bnl?branch=feat-refactor-assets#809c5c992bc95174712b463a5ee4fc036e7292cb"
 dependencies = [
  "base64",
  "bcndecode",
